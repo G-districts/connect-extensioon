@@ -1,0 +1,102 @@
+{
+  "manifest_version": 3,
+  "name": "G-School Connect",
+  "version": "13.9",
+  "description": "Student web management with live screen view, chat, scenes, and exam mode.",
+  "minimum_chrome_version": "115",
+  "permissions": [
+    "declarativeNetRequest",
+    "storage",
+    "tabs",
+    "scripting",
+    "notifications",
+    "identity"
+  ],
+  "optional_permissions": [
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://*.gdistrict.org/*",
+    "https://www.googleapis.com/*",
+    "https://www.youtube.com/*",
+    "https://m.youtube.com/*",
+    "<all_urls>"
+  ],
+  "oauth2": {
+    "client_id": "97200938621-8pfb4i7ii5o80t068riqhlm1gf3gh6l8.apps.googleusercontent.com",
+    "scopes": [
+      "email",
+      "profile",
+      "openid"
+    ]
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/16.png",
+      "48": "icons/48.png",
+      "128": "icons/128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/*",
+        "https://m.youtube.com/*"
+      ],
+      "js": [
+        "youtube_injection.js"
+      ],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "https://www.google.com/*",
+        "https://www.google.com/doodles/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "https://blocked.gdistrict.org/*"
+      ],
+      "js": [
+        "bypass_content.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "bubble-icon.png",
+        "icons/*.png",
+        "youtube_injection.js"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "update_url": "https://gschoolextension.blue-snow-7418.workers.dev/updates.xml"
+}

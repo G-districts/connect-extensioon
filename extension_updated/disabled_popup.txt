@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>G-School Disabled</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+<style>
+  body {
+    text-align: center;
+    padding: 2rem;
+    background: #f9f9f9;
+    color: #444;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  img {
+    width: 72px;
+    opacity: 0.8;
+    margin-bottom: 1rem;
+  }
+  h2 { color: #b00020; margin-bottom: .5rem; }
+  p { color: #555; line-height: 1.5; }
+  .note { font-size: .9em; color: #777; margin-top: 1rem; }
+</style>
+</head>
+<body>
+  <img src="icons/disabled_128.png" alt="Extension Disabled">
+  <h2>Extension Disabled</h2>
+  <p>This extension has been temporarily disabled by your teacher or administrator.</p>
+  <p class="note">Please wait until it is re-enabled to continue.</p>
+</body>
+</html>

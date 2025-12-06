@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>GSchools Buddy</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="gs-popup">
+
+      <!-- HEADER -->
+      <header class="gs-header">
+        <div class="gs-header-left">
+          <div class="gs-avatar" id="gsAvatar">🎒</div>
+          <div>
+            <div class="gs-title">GSchools CONNECT</div>
+            <div class="gs-subtitle"></div>
+          </div>
+        </div>
+        <button id="refresh" class="gs-icon-btn" title="Refresh">
+          🔄
+        </button>
+      </header>
+
+      <!-- STUDENT CARD -->
+      <section class="gs-card" id="studentCard">
+        <div class="gs-card-heading">
+          <span>👤 You</span>
+        </div>
+        <div class="gs-student-main">
+          <div id="studentName" class="gs-student-name">Student Name</div>
+          <div id="studentEmail" class="gs-student-email">Not signed in</div>
+        </div>
+        <div class="gs-connection-row">
+          <span class="gs-connection-label">Online with:</span>
+          <span id="backendHost" class="gs-connection-value">not connected</span>
+        </div>
+      </section>
+
+      <!-- STATUS CARD (always visible) -->
+      <section class="gs-card" id="statusCard">
+        <div class="gs-card-heading">
+          <span>🌐 Online status</span>
+        </div>
+
+        <div class="gs-status-row">
+          <span id="filterDot" class="gs-dot gs-dot-green"></span>
+          <span id="filterMode" class="gs-status-text">
+            Normal filtering
+          </span>
+        </div>
+
+        <div class="gs-policy-small">
+          <span id="policyVersion"></span>
+          <span id="policyUpdatedAt"></span>
+        </div>
+      </section>
+
+      <!-- CLASS CARD (only when class is active) -->
+      <section class="gs-card" id="classCard" style="display:none;">
+        <div class="gs-card-heading">
+          <span>🏫 Class right now</span>
+        </div>
+        <div class="gs-class-name" id="className">No class in session</div>
+
+        <div class="gs-status-row">
+          <span id="sessionDot" class="gs-dot gs-dot-gray"></span>
+          <span id="sessionText" class="gs-status-text">
+            No active class session.
+          </span>
+        </div>
+      </section>
+
+      <!-- ACTIONS CARD (only when class is active) -->
+      <section class="gs-card" id="actionsCard" style="display:none;">
+        <div class="gs-card-heading">
+          <span>✨ Tools for you</span>
+        </div>
+
+        <button id="raiseHand" class="gs-btn gs-btn-primary">
+          ✋ I need help
+        </button>
+        <div id="raiseMsg" class="gs-help-text"></div>
+
+        <button id="viewPresent" class="gs-btn gs-btn-secondary">
+          📽 Open class screen
+        </button>
+        <div id="presentHint" class="gs-help-text gs-help-small" style="display:none;">
+          This opens your teacher’s shared screen in a new tab.
+        </div>
+
+        <!-- Optional admin button -->
+        <!--
+        <button id="viewPresentAdmin" class="gs-btn gs-btn-ghost">
+          🛠 Admin presentation
+        </button>
+        <div id="presentHintAdmin" class="gs-help-text gs-help-small" style="display:none;">
+          For staff use only.
+        </div>
+        -->
+      </section>
+
+      <footer class="gs-footer">
+        <span>Reminder. You are under your school policies 24-7!</span>
+      </footer>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

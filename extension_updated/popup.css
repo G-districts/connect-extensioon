@@ -1,0 +1,230 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+               sans-serif;
+  background: #e5f0ff;
+}
+
+.gs-popup {
+  width: 320px;
+  padding: 10px 10px 12px;
+  box-sizing: border-box;
+}
+
+/* HEADER */
+
+.gs-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #4f46e5, #0ea5e9);
+  border-radius: 14px;
+  padding: 10px 12px;
+  color: #fff;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.25);
+}
+
+.gs-header-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.gs-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(15, 23, 42, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.gs-title {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.gs-subtitle {
+  font-size: 11px;
+  opacity: 0.9;
+}
+
+.gs-icon-btn {
+  border: none;
+  background: rgba(15, 23, 42, 0.15);
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+}
+
+/* CARDS */
+
+.gs-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 10px 12px 10px;
+  margin-bottom: 8px;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.08);
+}
+
+.gs-card-heading {
+  font-size: 13px;
+  font-weight: 700;
+  color: #4b5563;
+  margin-bottom: 6px;
+}
+
+/* STUDENT */
+
+.gs-student-main {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: 6px;
+}
+
+.gs-student-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.gs-student-email {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.gs-connection-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  margin-top: 4px;
+}
+
+.gs-connection-label {
+  color: #6b7280;
+}
+
+.gs-connection-value {
+  color: #111827;
+  font-weight: 500;
+}
+
+/* CLASS STATUS */
+
+.gs-class-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 6px;
+}
+
+.gs-status-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 4px;
+}
+
+.gs-status-text {
+  font-size: 12px;
+  color: #4b5563;
+}
+
+/* Dots */
+
+.gs-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  display: inline-block;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.gs-dot-green {
+  background: #22c55e;
+}
+
+.gs-dot-gray {
+  background: #9ca3af;
+}
+
+.gs-dot-red {
+  background: #ef4444;
+}
+
+.gs-dot-yellow {
+  background: #eab308;
+}
+
+.gs-policy-small {
+  font-size: 10px;
+  color: #9ca3af;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+/* BUTTONS */
+
+.gs-btn {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 999px;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 6px;
+}
+
+.gs-btn-primary {
+  background: #22c55e;
+  color: #064e3b;
+}
+
+.gs-btn-secondary {
+  background: #0ea5e9;
+  color: #0b1120;
+}
+
+.gs-btn-ghost {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.gs-btn:hover {
+  filter: brightness(0.95);
+}
+
+/* HELP TEXTS */
+
+.gs-help-text {
+  font-size: 11px;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+.gs-help-small {
+  font-size: 10px;
+}
+
+/* FOOTER */
+
+.gs-footer {
+  font-size: 10px;
+  color: #6b7280;
+  text-align: center;
+  margin-top: 4px;
+}
