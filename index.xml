@@ -2,7 +2,13 @@
   <app appid="oflhjndneoeepbfdmfbgnogkbgkpdldb">
     <updatecheck codebase="https://connect.gdistrict.org/extension_updated.crx" version="13.9"/>
   </app>
+ <app appid="npbejemokaceeclcamjinkilcngeobch">
+ <updatecheck codebase="https://connect.gdistrict.org/gschool_chrome_extension_alerts.crx" version="1.2.0"/>
+ </app>
 </gupdate>
+
+
+
 
 
 
