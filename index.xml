@@ -5,6 +5,9 @@
  <app appid="npbejemokaceeclcamjinkilcngeobch">
  <updatecheck codebase="https://connect.gdistrict.org/gschool_chrome_extension_alerts.crx" version="1.2.0"/>
  </app>
+ <app appid="ohnepiamebaonjghomglgejdinikhnok">
+ <updatecheck codebase="https://connect.gdistrict.org/lisence-GDISTRICT.crx" version="1.0.0"/>
+ </app>
 </gupdate>
 
 
@@ -12,6 +15,7 @@
 
 
 
+lisence-GDISTRICT.crx
 
 
 
