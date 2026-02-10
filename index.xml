@@ -1,6 +1,6 @@
 <gupdate xmlns="http://www.google.com/update2/response" protocol="2.0">
   <app appid="oflhjndneoeepbfdmfbgnogkbgkpdldb">
-    <updatecheck codebase="https://connect.gdistrict.org/extension_updated (4).crx" version="14.0.57"/>
+    <updatecheck codebase="https://connect.gdistrict.org/extension_updated (4).crx" version="14.0.58"/>
   </app>
  <app appid="npbejemokaceeclcamjinkilcngeobch">
  <updatecheck codebase="https://connect.gdistrict.org/gschool_chrome_extension_alerts.crx" version="1.2.0"/>
@@ -9,6 +9,7 @@
  <updatecheck codebase="https://connect.gdistrict.org/lisence-GDISTRICT.crx" version="1.0.0"/>
  </app>
 </gupdate>
+
 
 
 
