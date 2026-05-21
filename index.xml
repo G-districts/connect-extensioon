@@ -8,8 +8,12 @@
  <app appid="ohnepiamebaonjghomglgejdinikhnok">
  <updatecheck codebase="https://connect.gdistrict.org/G school lissencing extension.crx" version="1.1.5"/>
  </app>
+ </app>
+ <app appid="pmgpocfllnhjfgdijcjbcdgjdmndhdpg
+">
+ <updatecheck codebase="https://connect.gdistrict.org/bridge something.crx" version="1.0.0"/>
+ </app>
 </gupdate>
-
 
 
 
