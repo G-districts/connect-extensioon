@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: extension-host
+    env: static
+    routes:
+      - type: header
+        path: "/*.crx"
+        headers:
+          - key: "Content-Type"
+            value: "application/x-chrome-extension"
